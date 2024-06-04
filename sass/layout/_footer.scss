@@ -1,0 +1,112 @@
+footer {
+  padding: 30px 0 113px 0;
+  background-image: url(../imeges/mobile/footer-background.png);
+  background-size: 100% 830px;
+  background-repeat: no-repeat;
+
+  img {
+    width: 320px;
+  }
+  div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  span {
+    color: var(--text-color-2);
+  }
+  h4 {
+    color: var(--text-color-2);
+    margin-bottom: 56px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    input {
+      padding: 10px;
+      width: 270px;
+    }
+    button {
+      width: 160px;
+      border: 0;
+      background-color: var(--but-color-2);
+      color: var(--text-color-2);
+      border-radius: 10px;
+      padding: 15px 40px;
+    }
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  footer {
+    background-image: url(../imeges/mobile/footer-background@2x.png);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  footer {
+    padding: 0 0 113px 0;
+    background-size: 100% 930px;
+
+    img {
+      width: 365px;
+    }
+    div:first-child {
+      gap: 60px;
+    }
+    span {
+      @include font(400, 20px);
+    }
+    h4 {
+      @include font(700, 24px);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    background-image: url(../imeges/tablet/footer-background.png);
+    background-size: 100% 1055px;
+
+    img {
+      width: 463px;
+    }
+    h4 {
+      @include font(700, 30px);
+    }
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    footer {
+      background-image: url(../imeges/tablet/footer-background@2x.png);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 121px 0 104px 0;
+    background-image: url(../imeges/desktop/footer-background.png);
+
+    div:first-child {
+      flex-direction: row;
+      justify-content: center;
+      gap: 147px;
+    }
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    footer {
+      background-image: url(../imeges/desktop/footer-background@2x.png);
+    }
+  }
+}

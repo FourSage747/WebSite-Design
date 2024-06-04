@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    margin: auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 960px) {
+    width: 960px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+@mixin font($fw, $fs) {
+  font-weight: $fw;
+  font-size: $fs;
+}
+
+%font-familyRB {
+  font-family: "Roboto";
+}
+
+%font-familyRL {
+  font-family: "Raleway";
+}
