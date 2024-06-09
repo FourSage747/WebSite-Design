@@ -1,18 +1,23 @@
 .desktop {
   position: relative;
-  padding-right: 0;
-  padding-top: 0;
 }
 .manager_data {
-  position: absolute;
-  top: 20px;
+  padding: 20px 0 30px 0;
+  img {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+  }
   ul {
     display: flex;
     gap: 20px;
     li {
       padding: 10px 34px;
       background-color: #f1f4ff;
-      width: 130px;
+      width: 100%;
       border-radius: 20px;
       &:first-child {
         border-bottom: 5px solid #ff0000;
@@ -36,19 +41,8 @@
 }
 @media screen and (min-width: 1400px) {
   .manager_data {
-    ul {
-      li {
-        width: 170px;
-      }
-    }
-  }
-}
-@media screen and (min-width: 1500px) {
-  .manager_data {
-    ul {
-      li {
-        width: 200px;
-      }
+    img {
+      width: 700px;
     }
   }
 }

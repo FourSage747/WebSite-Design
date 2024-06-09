@@ -377,13 +377,18 @@ main {
 
 .desktop {
   position: relative;
-  padding-right: 0;
-  padding-top: 0;
 }
 
 .manager_data {
+  padding: 20px 0 30px 0;
+}
+.manager_data img {
+  width: 600px;
+  height: 400px;
   position: absolute;
-  top: 20px;
+  z-index: -1;
+  top: 0;
+  right: 0;
 }
 .manager_data ul {
   display: flex;
@@ -392,7 +397,7 @@ main {
 .manager_data ul li {
   padding: 10px 34px;
   background-color: #f1f4ff;
-  width: 130px;
+  width: 100%;
   border-radius: 20px;
 }
 .manager_data ul li:first-child {
@@ -415,21 +420,12 @@ main {
 }
 
 @media screen and (min-width: 1400px) {
-  .manager_data ul li {
-    width: 170px;
-  }
-}
-@media screen and (min-width: 1500px) {
-  .manager_data ul li {
-    width: 200px;
+  .manager_data img {
+    width: 700px;
   }
 }
 .manager_profile {
-  background: url(../imeges/desktop/background.png);
-  background-size: 60% 370px;
-  background-repeat: no-repeat;
-  background-position: top right;
-  padding: 127px 0 67px 0;
+  padding-bottom: 85px;
 }
 .manager_profile b {
   color: #434343;
@@ -698,7 +694,8 @@ footer div {
 .modal form ul {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 15px;
+  justify-content: space-between;
 }
 .modal form ul button {
   display: flex;
@@ -770,7 +767,7 @@ footer div {
     text-align: center;
   }
   .modal form ul button {
-    padding: 10px 32px;
+    padding: 10px 27px;
   }
   .modal form ul li:last-child button svg {
     display: block;

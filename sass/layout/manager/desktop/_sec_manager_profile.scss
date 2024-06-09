@@ -1,9 +1,5 @@
 .manager_profile {
-  background: url(../imeges/desktop/background.png);
-  background-size: 60% 370px;
-  background-repeat: no-repeat;
-  background-position: top right;
-  padding: 127px 0 67px 0;
+  padding-bottom: 85px;
   b {
     color: #434343;
     @include font(300, 16px);

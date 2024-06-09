@@ -53,7 +53,8 @@
     ul {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 15px;
+      justify-content: space-between;
       button {
         display: flex;
         align-items: center;
@@ -128,7 +129,7 @@
     form {
       ul {
         button {
-          padding: 10px 32px;
+          padding: 10px 27px;
         }
         li:last-child button {
           svg {

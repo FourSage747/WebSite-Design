@@ -577,7 +577,8 @@ footer div {
 .modal form ul {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 15px;
+  justify-content: space-between;
 }
 .modal form ul button {
   display: flex;
@@ -649,7 +650,7 @@ footer div {
     text-align: center;
   }
   .modal form ul button {
-    padding: 10px 32px;
+    padding: 10px 27px;
   }
   .modal form ul li:last-child button svg {
     display: block;
