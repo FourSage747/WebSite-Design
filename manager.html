@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website-Design</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/manager.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-div">
+        <nav>
+          <div class="logo">
+            <a>
+              <picture>
+                <source
+                  srcset="./imeges/desktop/logo.png 1x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./imeges/tablet/logo.png 1x"
+                  media="(min-width: 768px)"
+                />
+                <source srcset="./imeges/mobile/logo.png 1x" />
+                <img src="" alt="" />
+              </picture>
+            </a>
+            <h1>Neurolide</h1>
+          </div>
+          <ul class="menu">
+            <li class="is-active">
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Human"></use>
+                </svg>
+                Менеджер
+              </a>
+            </li>
+            <li>
+              <a href="./user.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-People"></use>
+                </svg>
+                Користувачі
+              </a>
+            </li>
+            <li>
+              <a href="./mediaChanel.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Copybook"></use>
+                </svg>
+                Медіа канали
+              </a>
+            </li>
+            <li>
+              <a href="./offers.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Copybook"></use>
+                </svg>
+                Офери
+              </a>
+            </li>
+            <li>
+              <a href="./profile.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Profile"></use>
+                </svg>
+                Профіль
+              </a>
+            </li>
+            <li>
+              <a href="./balance.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Card"></use>
+                </svg>
+                Баланс
+              </a>
+            </li>
+            <li>
+              <a href="./support.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Support"></use>
+                </svg>
+                Технічна підтримка
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="modal-button" data-menu-open>
+            <svg width="28" height="28">
+              <use href="./imeges/sprite.svg#icon-Menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div class="modal-nav" data-menu>
+      <ul class="modal-menu">
+        <li>
+          <a href="./index.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-House"></use>
+            </svg>
+            Головна
+          </a>
+        </li>
+        <li class="is-active-mobile">
+          <a href="#">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Human"></use>
+            </svg>
+            Менеджер
+          </a>
+        </li>
+        <li>
+          <a href="./user.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-People"></use>
+            </svg>
+            Користувачі
+          </a>
+        </li>
+        <li>
+          <a href="./mediaChanel.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Copybook"></use>
+            </svg>
+            Медіа канали
+          </a>
+        </li>
+        <li>
+          <a href="./offers.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Copybook"></use>
+            </svg>
+            Офери
+          </a>
+        </li>
+        <li>
+          <a href="./profile.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Profile"></use>
+            </svg>
+            Профіль
+          </a>
+        </li>
+        <li>
+          <a href="./balance.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Card"></use>
+            </svg>
+            Баланс
+          </a>
+        </li>
+        <li>
+          <a href="./support.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Support"></use>
+            </svg>
+            Технічна підтримка
+          </a>
+        </li>
+      </ul>
+    </div>
+    <main class="mobile">
+      <section class="main">
+        <div class="main-div">
+          <svg width="20" height="20">
+            <use href="./imeges/sprite.svg#icon-Human"></use>
+          </svg>
+          Менеджер
+        </div>
+      </section>
+      <section class="manager_info">
+        <div class="container">
+          <ul>
+            <li><b>Admin id:</b><br /><span>110A</span></li>
+            <li><b>Ім’я:</b><br /><span>Adela Parkson</span></li>
+            <li><b>Адреса:</b><br /><span>Khumaltar, Lalitpur</span></li>
+            <li><b>Номер телефону:</b><br /><span>9841236978</span></li>
+            <li><b>Email:</b><br /><span>Adela98@gmail.com</span></li>
+            <li><b>Пароль:</b><br /><span>*******</span></li>
+          </ul>
+          <ul>
+            <li>
+              <picture>
+                <source
+                  srcset="
+                    ./imeges/mobile/profile.png    1x,
+                    ./imeges/mobile/profile@2x.png 2x
+                  "
+                />
+                <img src="" alt="" />
+              </picture>
+            </li>
+            <li><button type="button">Вихід</button></li>
+            <li><button type="button">Видалити</button></li>
+          </ul>
+          <button type="button">Редагувати особисті дані</button>
+        </div>
+      </section>
+      <section class="manager_status">
+        <div class="container">
+          <ul>
+            <li><button type="button">Додані офери</button></li>
+            <li>
+              <button type="button" data-modal-open="modal2">
+                Додати офер
+              </button>
+            </li>
+          </ul>
+          <div>
+            <h3>UID 112 Статус</h3>
+            <ul>
+              <li><b>Назва</b><br /><span>Mithlesha Kumara Singha</span></li>
+              <li><b>Посилання</b><br /><span>wordwall.net</span></li>
+              <li><b>Бренд</b><br /><span>Kritipur, Kathmandu</span></li>
+              <li><b>Виплати</b><br /><span>$122</span></li>
+              <li><b>Баланс</b><br /><span>$1489</span></li>
+            </ul>
+            <ul>
+              <li data-modal-open="modal1">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-bin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <main class="desktop">
+      <section class="manager_data">
+        <ul>
+          <li>
+            <span>Індекс</span>
+            <h4>601,78</h4>
+          </li>
+          <li>
+            <span>Зачислення</span>
+            <h4>3002,49</h4>
+          </li>
+          <li>
+            <span>Бюджет</span>
+            <h4>216</h4>
+          </li>
+          <li>
+            <span>Сповіщення</span>
+            <h4>212</h4>
+          </li>
+        </ul>
+      </section>
+      <section class="manager_profile">
+        <div class="container manager_div">
+          <div>
+            <ul>
+              <li><b>Admin id:</b><span>110A</span></li>
+              <li><b>Ім’я:</b><span>Adela Parkson</span></li>
+              <li><b>Адреса:</b><span>Khumaltar, Lalitpur</span></li>
+              <li><b>Номер телефону:</b><span>9841236978</span></li>
+              <li><b>Email:</b><span>Adela98@gmail.com</span></li>
+              <li><b>Пароль:</b><span>*******</span></li>
+            </ul>
+            <ul>
+              <li><button type="button">Редагувати особисти дані</button></li>
+              <li><button type="button">Зберегти зміни</button></li>
+            </ul>
+          </div>
+          <ul class="manager_ul">
+            <li>
+              <picture>
+                <source
+                  srcset="
+                    ./imeges/desktop/profile.png    1x,
+                    ./imeges/desktop/profile@2x.png 2x
+                  "
+                />
+                <img src="" alt="" />
+              </picture>
+            </li>
+            <li><button type="button">Вихід</button></li>
+            <li><button type="button">Видалити профіль</button></li>
+          </ul>
+        </div>
+      </section>
+      <section class="manager_offers">
+        <div class="container">
+          <div>
+            <div>Додані офери</div>
+            <ul>
+              <li>
+                <svg width="15" height="15">
+                  <use href="./imeges/sprite.svg#icon-search"></use>
+                </svg>
+                <input type="text" placeholder="Пошук" />
+              </li>
+              <li>
+                <button type="button" data-modal-open="modal2">
+                  Додати офер
+                </button>
+              </li>
+            </ul>
+          </div>
+          <ul class="manager_offers_ul">
+            <li>
+              <span>UID</span>
+              <svg width="12" height="6">
+                <use href="./imeges/sprite.svg#icon-vector"></use>
+              </svg>
+            </li>
+            <li>
+              <span>Назва</span>
+              <svg width="12" height="6">
+                <use href="./imeges/sprite.svg#icon-vector"></use>
+              </svg>
+            </li>
+            <li>
+              <span>Посилання</span>
+              <svg width="12" height="6">
+                <use href="./imeges/sprite.svg#icon-vector"></use>
+              </svg>
+            </li>
+            <li>
+              <span>Бренд</span>
+              <svg width="12" height="6">
+                <use href="./imeges/sprite.svg#icon-vector"></use>
+              </svg>
+            </li>
+            <li>
+              <span>Виплати</span>
+              <svg width="12" height="6">
+                <use href="./imeges/sprite.svg#icon-vector"></use>
+              </svg>
+            </li>
+            <li>
+              <span>Payout</span>
+              <svg width="12" height="6">
+                <use href="./imeges/sprite.svg#icon-vector"></use>
+              </svg>
+            </li>
+            <li>
+              <span>Баланс</span>
+              <svg width="12" height="6">
+                <use href="./imeges/sprite.svg#icon-vector"></use>
+              </svg>
+            </li>
+            <li>
+              <span>Налаштування</span>
+              <svg width="12" height="6">
+                <use href="./imeges/sprite.svg#icon-vector"></use>
+              </svg>
+            </li>
+          </ul>
+          <ul class="manager_offers_ul2">
+            <li class="manager_offers_ul2_li">
+              <ul>
+                <li><span>112</span></li>
+                <li><span>Mithlesha Kumara Singha</span></li>
+                <li><span>wordwall.net</span></li>
+                <li><span>Natole, Lalitpur</span></li>
+                <li><span>$122</span></li>
+                <li>
+                  <span>RevShare</span>
+                  <svg width="12" height="6">
+                    <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                  </svg>
+                </li>
+                <li><span>$1489</span></li>
+                <li data-modal-open="modal1">
+                  <svg width="26" height="26">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="26" height="26">
+                    <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="manager_offers_ul2_li">
+              <ul>
+                <li><span>113</span></li>
+                <li><span>Mithlesha Kumara Singha</span></li>
+                <li><span>wordwall.net</span></li>
+                <li><span>Natole, Lalitpur</span></li>
+                <li><span>$122</span></li>
+                <li>
+                  <span>RevShare</span>
+                  <svg width="12" height="6">
+                    <use href="./imeges/sprite.svg#icon-vector"></use>
+                  </svg>
+                </li>
+                <li><span>$1489</span></li>
+                <li data-modal-open="modal1">
+                  <svg width="26" height="26">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="26" height="26">
+                    <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="manager_offers_ul2_li">
+              <ul>
+                <li><span>114</span></li>
+                <li><span>Mithlesha Kumara Singha</span></li>
+                <li><span>wordwall.net</span></li>
+                <li><span>Natole, Lalitpur</span></li>
+                <li><span>$122</span></li>
+                <li>
+                  <span>RevShare</span>
+                  <svg width="12" height="6">
+                    <use href="./imeges/sprite.svg#icon-vector"></use>
+                  </svg>
+                </li>
+                <li><span>$1489</span></li>
+                <li data-modal-open="modal1">
+                  <svg width="26" height="26">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="26" height="26">
+                    <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="manager_offers_ul2_li">
+              <ul>
+                <li><span>115</span></li>
+                <li><span>Mithlesha Kumara Singha</span></li>
+                <li><span>wordwall.net</span></li>
+                <li><span>Natole, Lalitpur</span></li>
+                <li><span>$122</span></li>
+                <li>
+                  <span>RevShare</span>
+                  <svg width="12" height="6">
+                    <use href="./imeges/sprite.svg#icon-vector"></use>
+                  </svg>
+                </li>
+                <li><span>$1489</span></li>
+                <li data-modal-open="modal1">
+                  <svg width="26" height="26">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="26" height="26">
+                    <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="manager_offers_ul2_li">
+              <ul>
+                <li><span>116</span></li>
+                <li><span>Mithlesha Kumara Singha</span></li>
+                <li><span>wordwall.net</span></li>
+                <li><span>Natole, Lalitpur</span></li>
+                <li><span>$122</span></li>
+                <li>
+                  <span>RevShare</span>
+                  <svg width="12" height="6">
+                    <use href="./imeges/sprite.svg#icon-vector"></use>
+                  </svg>
+                </li>
+                <li><span>$1489</span></li>
+                <li data-modal-open="modal1">
+                  <svg width="26" height="26">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="26" height="26">
+                    <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <svg width="18" height="18">
+          <use href="./imeges/sprite.svg#icon-question"></use>
+        </svg>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" id="modal1" data-modal>
+      <div class="modal">
+        <h2>Редагувати офер</h2>
+        <form>
+          <label>
+            <span>Назва</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Бренд</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Виплати</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Баланс</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <div class="modal_desktop_menu">
+            <span>Модель оплати</span>
+            <ul>
+              <li>
+                <span>RevShare</span>
+                <p id="p1">%$</p>
+                <svg width="12" height="6" open-paragraf="p1">
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CPL</span>
+                <p id="p2">$</p>
+                <svg width="12" height="6" open-paragraf="p2">
+                  <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CPC</span>
+                <p id="p3">$</p>
+                <svg width="12" height="6" open-paragraf="p3">
+                  <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CPM</span>
+              </li>
+              <li>
+                <span>CPH</span>
+              </li>
+            </ul>
+          </div>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li>
+              <button type="button">
+                <svg width="13" height="13">
+                  <use href="./imeges/sprite.svg#icon-plus"></use>
+                </svg>
+                Зберегти
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" id="modal2" data-modal>
+      <div class="modal">
+        <h2>Додати новий офер</h2>
+        <form>
+          <label>
+            <span>Назва</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Бренд</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Виплати</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Баланс</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <div class="modal_desktop_menu">
+            <span>Модель оплати</span>
+            <ul>
+              <li>
+                <span>RevShare</span>
+                <p id="p4">%$</p>
+                <svg width="12" height="6" open-paragraf="p4">
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CPL</span>
+                <p id="p5">$</p>
+                <svg width="12" height="6" open-paragraf="p5">
+                  <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CPC</span>
+                <p id="p6">$</p>
+                <svg width="12" height="6" open-paragraf="p6">
+                  <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CPM</span>
+              </li>
+              <li>
+                <span>CPH</span>
+              </li>
+            </ul>
+          </div>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li>
+              <button type="button">
+                <svg width="13" height="13">
+                  <use href="./imeges/sprite.svg#icon-plus"></use>
+                </svg>
+                Додати офер
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/menu.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test-site</title>
+    <title>Website-Design</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -13,596 +13,383 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // const width = window.innerWidth;
+        // if (width >= 1200) {
+        //   // Перенаправлення на десктопну версію
+        //   window.location.href = "manager.html";
+        // }
+        window.location.href = "registerPage.html";
+      });
+    </script>
   </head>
 
   <body>
     <header>
-      <div class="container header__container">
+      <div class="nav-div">
         <nav>
-          <a class="logo" href="index.html">Logo</a>
+          <div class="logo">
+            <a>
+              <picture>
+                <source
+                  srcset="./imeges/desktop/logo.png 1x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./imeges/tablet/logo.png 1x"
+                  media="(min-width: 768px)"
+                />
+                <source srcset="./imeges/mobile/logo.png 1x" />
+                <img src="" alt="" />
+              </picture>
+            </a>
+            <h1>Neurolide</h1>
+          </div>
           <ul class="menu">
-            <li><a href="">Помощь</a></li>
-            <li><a href="">Блог</a></li>
-            <li><a href="">Обучение</a></li>
-            <li><a href="">Каталог блогеров</a></li>
-          </ul>
-          <ul class="address">
             <li>
-              <button type="button">Войти</button>
+              <a href="./manager.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Human"></use>
+                </svg>
+                Менеджер
+              </a>
             </li>
             <li>
-              <button type="button" class="register">РЕГИСТРАЦИЯ</button>
+              <a href="./user.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-People"></use>
+                </svg>
+                Користувачі
+              </a>
+            </li>
+            <li>
+              <a href="./mediaChanel.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Copybook"></use>
+                </svg>
+                Медіа канали
+              </a>
+            </li>
+            <li>
+              <a href="./offers.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Copybook"></use>
+                </svg>
+                Офери
+              </a>
+            </li>
+            <li>
+              <a href="./profile.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Profile"></use>
+                </svg>
+                Профіль
+              </a>
+            </li>
+            <li>
+              <a href="./balance.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Card"></use>
+                </svg>
+                Баланс
+              </a>
+            </li>
+            <li>
+              <a href="./support.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Support"></use>
+                </svg>
+                Технічна підтримка
+              </a>
             </li>
           </ul>
-        </nav>
-        <button type="button" class="modal-button" data-menu-open>
-          <svg width="43" height="30">
-            <use href="./imeges/sprite.svg#icon-menu"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-menu" data-menu>
-        <div class="container modal-container">
-          <button type="button" class="close" data-menu-close>
-            <svg width="25" height="25">
-              <use fill="white" href="./imeges/sprite.svg#icon-cross"></use>
+          <button type="button" class="modal-button" data-menu-open>
+            <svg width="28" height="28">
+              <use href="./imeges/sprite.svg#icon-Menu"></use>
             </svg>
           </button>
-          <ul class="modal-mn">
-            <li><a href="">Помощь</a></li>
-            <li><a href="">Блог</a></li>
-            <li><a href="">Обучение</a></li>
-            <li><a href="">Каталог блогеров</a></li>
-          </ul>
-          <ul class="modal-address">
-            <li>
-              <button type="button">Войти</button>
-            </li>
-            <li>
-              <button type="button" class="register">РЕГИСТРАЦИЯ</button>
-            </li>
-          </ul>
-        </div>
+        </nav>
       </div>
     </header>
+    <div class="modal-nav" data-menu>
+      <ul class="modal-menu">
+        <li class="is-active-mobile">
+          <a href="#">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-House"></use>
+            </svg>
+            Головна
+          </a>
+        </li>
+        <li>
+          <a href="./manager.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Human"></use>
+            </svg>
+            Менеджер
+          </a>
+        </li>
+        <li>
+          <a href="./user.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-People"></use>
+            </svg>
+            Користувачі
+          </a>
+        </li>
+        <li>
+          <a href="./mediaChanel.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Copybook"></use>
+            </svg>
+            Медіа канали
+          </a>
+        </li>
+        <li>
+          <a href="./offers.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Copybook"></use>
+            </svg>
+            Офери
+          </a>
+        </li>
+        <li>
+          <a href="./profile.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Profile"></use>
+            </svg>
+            Профіль
+          </a>
+        </li>
+        <li>
+          <a href="./balance.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Card"></use>
+            </svg>
+            Баланс
+          </a>
+        </li>
+        <li>
+          <a href="./support.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Support"></use>
+            </svg>
+            Технічна підтримка
+          </a>
+        </li>
+      </ul>
+    </div>
     <main>
       <section class="main">
-        <div class="container">
-          <h1>EPICSTARS — платформа, объединяющая рекламодателей и блогеров</h1>
-          <p>
-            Помогаем брендам и компаниям транслировать свои маркетинговые
-            активности через лидеров мнений и блогеров
-          </p>
-          <button type="button" class="button" data-modal-open>
-            давайте начнем!
-          </button>
-          <picture>
-            <source
-              srcset="
-                ./imeges/desktop/desktop-mainImage.webp    1x,
-                ./imeges/desktop/desktop-mainImage@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-              type="image/webp"
-            />
-            <source
-              srcset="
-                ./imeges/desktop/desktop-mainImage.png    1x,
-                ./imeges/desktop/desktop-mainImage@2x.png 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
-                ./imeges/tablet/tablet-mainImage.webp    1x,
-                ./imeges/tablet/tablet-mainImage@2x.webp 2x
-              "
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="
-                ./imeges/tablet/tablet-mainImage.png    1x,
-                ./imeges/tablet/tablet-mainImage@2x.png 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./imeges/mobile/mobile-mainImage.webp    1x,
-                ./imeges/mobile/mobile-mainImage@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              srcset="
-                ./imeges/mobile/mobile-mainImage.png    1x,
-                ./imeges/mobile/mobile-mainImage@2x.png 2x
-              "
-            />
-            <img src="" alt="" />
-          </picture>
+        <div class="main-div">
+          <svg width="20" height="20">
+            <use href="./imeges/sprite.svg#icon-House"></use>
+          </svg>
+          Головна
         </div>
       </section>
-      <section class="text">
+      <section class="main-ul">
         <div class="container">
-          <ul>
+          <ul class="main-ul-button">
+            <li><button type="button">Платіжний метод</button></li>
             <li>
-              <svg width="64" height="64">
-                <use href="./imeges/sprite.svg#icon-Internet-marketing"></use>
+              <button type="button" data-modal-open="modal1">
+                Додати карту
+              </button>
+            </li>
+          </ul>
+          <ul class="choise-card">
+            <li>
+              <svg width="5" height="30">
+                <use href="./imeges/sprite.svg#icon-arrow-left"></use>
               </svg>
-              <h3>Интернет маркетинг</h3>
-              <p>
-                Опытные маркетологи компании Skyweb занимаются построением
-                эффективных интернет маркетинг стратегий.
-              </p>
-              <a href="">Узнать больше</a>
+            </li>
+            <li class="card">
+              <ul>
+                <li>
+                  <b>$95, 400.00 USD</b
+                  ><img src="./imeges/mobile/VISA.png" alt="" />
+                </li>
+                <li>
+                  <b
+                    >**** **** **** 3814
+                    <svg width="20" height="20">
+                      <use href="./imeges/sprite.svg#icon-Copy"></use></svg></b
+                  ><span>Expires 04 / 24</span>
+                </li>
+                <li>
+                  <b>Kevin Gilbert</b
+                  ><svg width="24" height="24">
+                    <use href="./imeges/sprite.svg#icon-Other"></use>
+                  </svg>
+                </li>
+              </ul>
             </li>
             <li>
-              <svg width="64" height="64">
-                <use href="./imeges/sprite.svg#icon-WEB-developing"></use>
+              <svg width="5" height="30">
+                <use href="./imeges/sprite.svg#icon-arrow-right"></use>
               </svg>
-              <h3>Веб Разработка</h3>
-              <p>
-                В Skyweb вы можете заказать разработку сайта согласно
-                предоставленному техническому заданию.
-              </p>
-              <a href="">Узнать больше</a>
-            </li>
-            <li>
-              <svg width="64" height="64">
-                <use href="./imeges/sprite.svg#icon-Frame"></use>
-              </svg>
-              <h3>Разработка Приложений</h3>
-              <p>
-                Мы делаем приложения для мобильных устройств с последующей
-                поддержкой при релизе в маркетплейсы.
-              </p>
-              <a href="">Узнать больше</a>
-            </li>
-            <li>
-              <svg width="64" height="64">
-                <use href="./imeges/sprite.svg#icon-Site-boost"></use>
-              </svg>
-              <h3>Ускорение Сайта</h3>
-              <p>
-                Мы знаем, как ускорить ваш сайт. Разработчики увеличивают
-                скорость загрузки и делают это качественно.
-              </p>
-              <a href="">Узнать больше</a>
-            </li>
-            <li>
-              <svg width="64" height="64">
-                <use href="./imeges/sprite.svg#icon-SEO-optimization"></use>
-              </svg>
-              <h3>SEO Оптимизация</h3>
-              <p>
-                Команда профессионалов выполняет комплексный анализ сайта и
-                оптимиз ирует SEO показатели.
-              </p>
-              <a href="">Узнать больше</a>
-            </li>
-            <li>
-              <svg width="64" height="64">
-                <use href="./imeges/sprite.svg#icon-SEO-copyrighting"></use>
-              </svg>
-              <h3>SEO Копирайтинг</h3>
-              <p>
-                Большая команда копирайтеров в короткие сроки пишут уникльные
-                SEO тексты для сайта с ключевыми словами.
-              </p>
-              <a href="">Узнать больше</a>
             </li>
           </ul>
         </div>
       </section>
-      <section class="imeges">
+      <section class="main_info">
         <div class="container">
-          <picture>
-            <source
-              srcset="
-                ./imeges/desktop/desktop-imageSection.webp    1x,
-                ./imeges/desktop/desktop-imageSection@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-              type="image/webp"
-            />
-            <source
-              srcset="
-                ./imeges/desktop/desktop-imageSection.png    1x,
-                ./imeges/desktop/desktop-imageSection@2x.png 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
-                ./imeges/tablet/tablet-imageSection.webp    1x,
-                ./imeges/tablet/tablet-imageSection@2x.webp 2x
-              "
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="
-                ./imeges/tablet/tablet-imageSection.png    1x,
-                ./imeges/tablet/tablet-imageSection@2x.png 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./imeges/mobile/mobile-imageSection.webp    1x,
-                ./imeges/mobile/mobile-imageSection@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              srcset="
-                ./imeges/mobile/mobile-imageSection.png    1x,
-                ./imeges/mobile/mobile-imageSection@2x.png 2x
-              "
-            />
-            <img src="" alt="" />
-          </picture>
-          <div class="div">
-            <span>О нашей компании</span>
-            <h4>
-              Наша задача – Обеспечить бизнес грамотной системой маркетинга
-            </h4>
-            <p>
-              Компания Skyweb предоставляет услуги профессиональных интернет
-              маркетологов клиентам по всему миру. Среди наиболее востребованных
-              услуг, нацеленных на развитие бизнеса, находятся следующие:
-            </p>
-            <ul>
-              <li style="--fill-percent: 90%">
-                <h4>Веб разработка</h4>
-                <span>90%</span>
-              </li>
-              <li style="--fill-percent: 85%">
-                <h4>SEO Оптимизация</h4>
-                <span>85%</span>
-              </li>
-              <li style="--fill-percent: 70%">
-                <h4>Интернет Маркетинг</h4>
-                <span>70%</span>
-              </li>
-              <li style="--fill-percent: 40%">
-                <h4>Мобильная разработка</h4>
-                <span>40%</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="choise">
-        <div class="container">
-          <picture>
-            <source
-              srcset="
-                ./imeges/desktop/desktop-choiseSection.webp    1x,
-                ./imeges/desktop/desktop-choiseSection@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-              type="image/webp"
-            />
-            <source
-              srcset="
-                ./imeges/desktop/desktop-choiseSection.png    1x,
-                ./imeges/desktop/desktop-choiseSection@2x.png 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
-                ./imeges/tablet/tablet-choiseSection.webp    1x,
-                ./imeges/tablet/tablet-choiseSection@2x.webp 2x
-              "
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="
-                ./imeges/tablet/tablet-choiseSection.png    1x,
-                ./imeges/tablet/tablet-choiseSection@2x.png 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./imeges/mobile/mobile-choiseSection.webp    1x,
-                ./imeges/mobile/mobile-choiseSection@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              srcset="
-                ./imeges/mobile/mobile-choiseSection.png    1x,
-                ./imeges/mobile/mobile-choiseSection@2x.png 2x
-              "
-            />
-            <img src="" alt="" />
-          </picture>
-          <div class="div">
-            <span>Почему выбирают нас?</span>
-            <h4>
-              Продвигайте свой бренд в интернете с современным IT решениями
-            </h4>
-            <p>
-              Опытная веб студия Skyweb несёт полную ответсвенность за
-              предоставляемые услуги и гарантирует следующие преимущества:
-            </p>
-            <ul>
-              <li>
-                <button type="button">
-                  <svg width="14" height="14">
-                    <use href="./imeges/sprite.svg#icon-Vector"></use>
-                  </svg>
-                  <span>Приятные сотрудники</span>
-                </button>
-              </li>
-              <li>
-                <button type="button">
-                  <svg width="14" height="14">
-                    <use href="./imeges/sprite.svg#icon-Vector"></use>
-                  </svg>
-                  <span>Приятные сотрудники</span>
-                </button>
-              </li>
-              <li>
-                <button type="button">
-                  <svg width="14" height="14">
-                    <use href="./imeges/sprite.svg#icon-Vector"></use>
-                  </svg>
-                  <span>Приятные сотрудники</span>
-                </button>
-              </li>
-              <li>
-                <button type="button">
-                  <svg width="14" height="14">
-                    <use href="./imeges/sprite.svg#icon-Vector"></use>
-                  </svg>
-                  <span>Приятные сотрудники</span>
-                </button>
-              </li>
-              <li>
-                <button type="button">
-                  <svg width="14" height="14">
-                    <use href="./imeges/sprite.svg#icon-Vector"></use>
-                  </svg>
-                  <span>Приятные сотрудники</span>
-                </button>
-              </li>
-              <li>
-                <button type="button">
-                  <svg width="14" height="14">
-                    <use href="./imeges/sprite.svg#icon-Vector"></use>
-                  </svg>
-                  <span>Приятные сотрудники</span>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="expirience">
-        <div class="container">
-          <h3>Более 6 лет опыта в сфере IT</h3>
           <ul>
             <li>
-              <svg width="54" height="54">
-                <use href="./imeges/sprite.svg#icon-backpack"></use>
-              </svg>
-              <span
-                ><b>6+</b><br />
-                Лет в разработке</span
-              >
+              <span>Індекс</span>
+              <h4>601,78</h4>
             </li>
             <li>
-              <svg width="64" height="54">
-                <use href="./imeges/sprite.svg#icon-case"></use>
-              </svg>
-              <span
-                ><b>150+</b><br />
-                Выполненных проектов</span
-              >
+              <span>Зачислення</span>
+              <h4>3002,49</h4>
             </li>
             <li>
-              <svg width="54" height="54">
-                <use href="./imeges/sprite.svg#icon-smile"></use>
-              </svg>
-              <span
-                ><b>200+</b><br />
-                Довольных клиентов</span
-              >
+              <span>Бюджет</span>
+              <h4>216</h4>
             </li>
             <li>
-              <svg width="77" height="54">
-                <use href="./imeges/sprite.svg#icon-people"></use>
-              </svg>
-              <span
-                ><b>40+</b><br />
-                Сотрудников</span
-              >
+              <span>Сповіщення</span>
+              <h4>212</h4>
             </li>
           </ul>
         </div>
       </section>
-      <section class="ourteam">
+      <section class="main_balance">
         <div class="container">
-          <span>Карьера в IT</span>
-          <h4>Вступайте в нашу команду</h4>
-          <ul>
-            <li><button type="button">Веб разработчик</button></li>
-            <li><button type="button">SEO специалист</button></li>
-            <li><button type="button">SEO копирайтер</button></li>
-            <li><button type="button">Графический дизайнер</button></li>
-            <li><button type="button">Менеджер компании</button></li>
-            <li><button type="button">Тестировщик решений</button></li>
-            <li><button type="button">Интернет маркетолог</button></li>
-            <li><button type="button">UX/UI дизайнер</button></li>
-            <li><button type="button">Другая деятельность</button></li>
+          <button type="button">Особистий баланс</button>
+          <div class="balance_div">
+            <span>Баланс</span>
+            <h3>$85,400.00</h3>
+          </div>
+          <ul class="balance_ul">
+            <li>
+              <button type="button" data-modal-open="modal2">
+                Вивести баланс
+              </button>
+            </li>
+            <li>
+              <button type="button" data-modal-open="modal3">
+                Поповнити баланс
+              </button>
+            </li>
           </ul>
         </div>
       </section>
     </main>
     <footer>
       <div class="container">
-        <picture>
-          <source
-            srcset="
-              ./imeges/desktop/desktop-footerSection.webp    1x,
-              ./imeges/desktop/desktop-footerSection@2x.webp 2x
-            "
-            media="(min-width: 1200px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./imeges/desktop/desktop-footerSection.png    1x,
-              ./imeges/desktop/desktop-footerSection@2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ./imeges/tablet/tablet-footerSection.webp    1x,
-              ./imeges/tablet/tablet-footerSection@2x.webp 2x
-            "
-            media="(min-width: 768px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./imeges/tablet/tablet-footerSection.png    1x,
-              ./imeges/tablet/tablet-footerSection@2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ./imeges/mobile/mobile-footerSection.webp    1x,
-              ./imeges/mobile/mobile-footerSection@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./imeges/mobile/mobile-footerSection.png    1x,
-              ./imeges/mobile/mobile-footerSection@2x.png 2x
-            "
-          />
-          <img src="" alt="" />
-        </picture>
-        <div>
-          <span>Свяжитесь с нами</span>
-          <h4>Оставьте заявку на обратную связь</h4>
-          <form action="">
-            <input type="text" name="" id="" placeholder="Ваше имя" required />
-            <input
-              type="text"
-              name=""
-              id=""
-              placeholder="Номер телефона"
-              required
-            />
-            <button type="submit">Отправить</button>
-          </form>
-        </div>
+        <svg width="18" height="18">
+          <use href="./imeges/sprite.svg#icon-question"></use>
+        </svg>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal container">
-        <button class="but" type="button" data-modal-close>
-          <svg width="11" height="11">
-            <use href="./imeges/sprite.svg#icon-cross"></use>
-          </svg>
-        </button>
-        <form class="form1" id="myForm">
-          <p>Залиште свої дані, ми вам передзвонимо</p>
-          <div class="modal-form">
-            <label>
-              <span class="label">Ім'я</span>
-              <span class="span">
-                <input
-                  id="name"
-                  type="text"
-                  class="input"
-                  name="user_name"
-                  placeholder=""
-                  required
-                />
-                <svg width="12" height="12">
-                  <use href="./imeges/sprite.svg#icon-Vector-1"></use>
-                </svg> </span
-              ><br />
-              <span class="error" id="nameError"></span><br />
-            </label>
-            <label>
-              <span class="label">Телефон</span>
-              <span class="span">
-                <input
-                  id="phone"
-                  type="phone"
-                  class="input"
-                  name="user_phone"
-                  placeholder=""
-                  required
-                />
-                <svg width="13" height="13">
-                  <use href="./imeges/sprite.svg#icon-Vector-2"></use>
-                </svg> </span
-              ><br />
-              <span class="error" id="phoneError"></span><br />
-            </label>
-            <label>
-              <span class="label">Пошта</span>
-              <span class="span">
-                <input
-                  id="email"
-                  type="email"
-                  class="input"
-                  name="user_email"
-                  placeholder=""
-                  required
-                />
-                <svg width="15" height="12">
-                  <use href="./imeges/sprite.svg#icon-Vector-3"></use>
-                </svg> </span
-              ><br />
-              <span class="error" id="emailError"></span><br />
-            </label>
-            <label>
-              <span class="label">Коментар</span>
-              <textarea
-                class="inputarea"
-                name="user_com"
-                placeholder="Введіть текст"
-              ></textarea>
-            </label>
-            <div class="div1">
-              <input
-                type="checkbox"
-                class="checkbox hidden"
-                name="checkbox"
-                required
-                id="checkbox"
-              />
-              <label for="checkbox" class="check"
-                >Погоджуюся з розсилкою та приймаю
-                <a href="">Умови договору</a></label
-              >
-            </div>
-            <button type="submit">Відправити</button>
-          </div>
+    <div class="backdrop is-hidden" id="modal1" data-modal>
+      <div class="modal">
+        <h2>Додати нову карту</h2>
+        <form>
+          <label>
+            <span>Номер карти</span>
+            <input type="text" placeholder="Номер карти" />
+          </label>
+          <label>
+            <span>Ініціали, вказані на карті</span>
+            <input type="text" placeholder="Ім’я та прізвище" />
+          </label>
+          <ul>
+            <li>
+              <label
+                ><span>CVC</span><input type="text" placeholder="****"
+              /></label>
+            </li>
+            <li>
+              <label
+                ><span>Дата завершення</span
+                ><input type="text" placeholder="MM / YY"
+              /></label>
+            </li>
+          </ul>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li><button type="button">Додати карту</button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" id="modal2" data-modal>
+      <div class="modal">
+        <h2>Вивести баланс</h2>
+        <form>
+          <label>
+            <span>Ім'я</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Номер картки</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Пошта</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Вивести суму</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li><button type="button">Вивести</button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" id="modal3" data-modal>
+      <div class="modal">
+        <h2>Поповнення балансу</h2>
+        <form>
+          <label>
+            <span>Номер карти</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <ul>
+            <li>
+              <label
+                ><span>Термін дії</span><input type="text" placeholder="****"
+              /></label>
+            </li>
+            <li>
+              <label
+                ><span>CVV2</span><input type="text" placeholder="...."
+              /></label>
+            </li>
+          </ul>
+          <label>
+            <span>ПІБ власника</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <ul>
+            <li>
+              <label
+                ><span>Номер телефону</span
+                ><input type="text" placeholder="+380"
+              /></label>
+            </li>
+            <li>
+              <label
+                ><span>Email</span><input type="text" placeholder="...."
+              /></label>
+            </li>
+          </ul>
+          <label>
+            <span>Сума поповнення</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li><button type="button">Поповнити</button></li>
+          </ul>
         </form>
       </div>
     </div>

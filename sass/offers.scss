@@ -1,0 +1,19 @@
+@import "./utils/hidden";
+
+@import "./base/base";
+
+@import "./layout/manager";
+@import "./layout/header";
+@import "./layout/main";
+
+@import "./layout/offers/mobile/sec_offers_main";
+@import "./layout/offers/mobile/sec_offers_status";
+
+@import "./layout/offers/desktop/sec_offers_data";
+@import "./layout/offers/desktop/sec_offers_search";
+@import "./layout/offers/desktop/sec_offers_offers";
+@import "./layout/offers/desktop/sec_offers_offers_list";
+
+@import "./layout/footer";
+
+@import "./components/backdrop";

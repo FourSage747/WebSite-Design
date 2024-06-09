@@ -1,0 +1,54 @@
+.desktop {
+  position: relative;
+  padding-right: 0;
+  padding-top: 0;
+}
+.manager_data {
+  position: absolute;
+  top: 20px;
+  ul {
+    display: flex;
+    gap: 20px;
+    li {
+      padding: 10px 34px;
+      background-color: #f1f4ff;
+      width: 130px;
+      border-radius: 20px;
+      &:first-child {
+        border-bottom: 5px solid #ff0000;
+      }
+      &:nth-child(2) {
+        border-bottom: 5px solid #ffd600;
+      }
+      &:nth-child(3) {
+        border-bottom: 5px solid #0fb600;
+      }
+      &:last-child {
+        border-bottom: 5px solid #9e00ff;
+      }
+      h4 {
+        margin: 0;
+        margin-top: 5px;
+        @include font(700, 20px);
+      }
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  .manager_data {
+    ul {
+      li {
+        width: 170px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1500px) {
+  .manager_data {
+    ul {
+      li {
+        width: 200px;
+      }
+    }
+  }
+}

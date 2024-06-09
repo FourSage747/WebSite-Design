@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+header {
+  padding: 33px 0 20px 0;
+  position: relative;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  gap: 14px;
+}
+header .container a {
+  padding: 7px;
+  border-radius: 50%;
+  background-color: white;
+}
+header .container h1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+}
+header .background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+header .background img {
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  header .container {
+    padding-left: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .container {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 55%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 40%;
+    gap: 40px;
+  }
+  header .container a {
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  header .container h1 {
+    font-weight: 400;
+    font-size: 56px;
+  }
+  header .background {
+    width: 100%;
+    height: 100%;
+  }
+  header .background img {
+    width: 100%;
+    height: 100%;
+  }
+}
+main {
+  padding-bottom: 20px;
+}
+main .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .container form h2 {
+  font-weight: 400;
+  font-size: 26px;
+  margin: 0;
+}
+main .container form button {
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 0;
+  color: white;
+  background: linear-gradient(to right, #70a9ff, #0149b4);
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+}
+main .container form ul {
+  display: flex;
+  gap: 10px;
+}
+main .container form ul li {
+  border-radius: 20px;
+  width: 100%;
+}
+main .container form ul li button {
+  width: 100%;
+}
+main .container form ul li:first-child button {
+  background: #2e65f3;
+}
+main .container form ul li:last-child button {
+  background: #124897;
+}
+main .container form label span {
+  display: block;
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+main .container form label input {
+  background: transparent;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #a3aed0;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    padding: 80px 0;
+  }
+  main .container {
+    width: 454px;
+    margin-left: 10%;
+  }
+  main .container form {
+    gap: 30px;
+  }
+  main .container form h2 {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+  }
+  main .container form button {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+  }
+  main .container form ul li button {
+    text-align: start;
+  }
+  main .container form ul li:first-child button {
+    background: #2e65f3;
+  }
+  main .container form ul li:last-child button {
+    background: #124897;
+  }
+  main .container form label span {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  main .container form label input {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=registerPage.css.map */

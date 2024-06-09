@@ -1,0 +1,177 @@
+.mediaChanel_offers_list {
+  .mediaChanel_offers_list_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .mediaChanel_offers_list_li {
+      box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #f1f4ff;
+      &:first-child {
+        background: linear-gradient(to bottom, #70a9ff, #0149b4);
+        color: white;
+        ul {
+          li:nth-child(6) {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        b {
+          @include font(300, 10px);
+        }
+        li:first-child {
+          margin-right: 30px;
+        }
+        li:nth-child(2) {
+          width: 150px;
+          margin-right: 10px;
+        }
+        li:nth-child(3) {
+          margin-right: 75px;
+        }
+        li:nth-child(4) {
+          margin-right: 80px;
+        }
+        li:nth-child(5) {
+          margin-right: 50px;
+        }
+        li:nth-child(6) {
+          position: relative;
+          margin-right: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 20px;
+          background-color: #2e65f3;
+          padding: 7px;
+          color: white;
+          div {
+            overflow: hidden;
+            opacity: 0;
+            max-height: 0;
+            transition: opacity 0.5s ease, max-height 0.5s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            position: absolute;
+            top: -100%;
+            padding: 5px;
+            background-color: white;
+            box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+            color: black;
+            &.show {
+              opacity: 1;
+              max-height: 1000px;
+            }
+            span {
+              border-radius: 10px;
+              padding: 5px;
+            }
+            svg {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        li:nth-child(7) {
+          margin-right: 20px;
+        }
+        li:nth-child(8) {
+          margin-right: 5px;
+        }
+        li:nth-child(9) {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  .mediaChanel_offers_list {
+    .mediaChanel_offers_list_ul {
+      .mediaChanel_offers_list_li {
+        ul {
+          li:first-child {
+            margin-right: 40px;
+          }
+          li:nth-child(2) {
+            width: 180px;
+            margin-right: 20px;
+          }
+          li:nth-child(3) {
+            margin-right: 85px;
+          }
+          li:nth-child(4) {
+            margin-right: 90px;
+          }
+          li:nth-child(5) {
+            margin-right: 60px;
+          }
+          li:nth-child(6) {
+            margin-right: 30px;
+          }
+          li:nth-child(7) {
+            margin-right: 30px;
+          }
+          li:nth-child(8) {
+            margin-right: 15px;
+          }
+          li:nth-child(9) {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1500px) {
+  .mediaChanel_offers_list {
+    .mediaChanel_offers_list_ul {
+      .mediaChanel_offers_list_li {
+        ul {
+          li:first-child {
+            margin-right: 60px;
+          }
+          li:nth-child(2) {
+            width: 200px;
+            margin-right: 40px;
+          }
+          li:nth-child(3) {
+            margin-right: 100px;
+          }
+          li:nth-child(4) {
+            margin-right: 110px;
+          }
+          li:nth-child(5) {
+            margin-right: 80px;
+          }
+          li:nth-child(6) {
+            margin-right: 50px;
+          }
+          li:nth-child(7) {
+            margin-right: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+.backdrop {
+  .modal {
+    .modal_desktop_menu {
+      display: none;
+    }
+    form {
+      ul {
+        button {
+          padding: 10px 22px;
+        }
+      }
+    }
+  }
+}

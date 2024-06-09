@@ -1,0 +1,19 @@
+@import "./utils/hidden";
+
+@import "./base/base";
+
+@import "./layout/manager";
+@import "./layout/header";
+@import "./layout/main";
+
+@import "./layout/mediaChanel/mobile/sec_mediaChanel_main";
+@import "./layout/mediaChanel/mobile/sec_mediaChanel_status";
+
+@import "./layout/mediaChanel/desktop/sec_mediaChanel_data";
+@import "./layout/mediaChanel/desktop/sec_mediaChanel_search";
+@import "./layout/mediaChanel/desktop/sec_mediaChanel_offers";
+@import "./layout/mediaChanel/desktop/sec_mediaChanel_offers_list";
+
+@import "./layout/footer";
+
+@import "./components/backdrop";

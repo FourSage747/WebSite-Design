@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website-Design</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/support.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-div">
+        <nav>
+          <div class="logo">
+            <a>
+              <picture>
+                <source
+                  srcset="./imeges/desktop/logo.png 1x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./imeges/tablet/logo.png 1x"
+                  media="(min-width: 768px)"
+                />
+                <source srcset="./imeges/mobile/logo.png 1x" />
+                <img src="" alt="" />
+              </picture>
+            </a>
+            <h1>Neurolide</h1>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="./manager.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Human"></use>
+                </svg>
+                Менеджер
+              </a>
+            </li>
+            <li>
+              <a href="./user.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-People"></use>
+                </svg>
+                Користувачі
+              </a>
+            </li>
+            <li>
+              <a href="./mediaChanel.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Copybook"></use>
+                </svg>
+                Медіа канали
+              </a>
+            </li>
+            <li>
+              <a href="./offers.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Copybook"></use>
+                </svg>
+                Офери
+              </a>
+            </li>
+            <li>
+              <a href="./profile.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Profile"></use>
+                </svg>
+                Профіль
+              </a>
+            </li>
+            <li>
+              <a href="./balance.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Card"></use>
+                </svg>
+                Баланс
+              </a>
+            </li>
+            <li class="is-active">
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Support"></use>
+                </svg>
+                Технічна підтримка
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="modal-button" data-menu-open>
+            <svg width="28" height="28">
+              <use href="./imeges/sprite.svg#icon-Menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div class="modal-nav" data-menu>
+      <ul class="modal-menu">
+        <li>
+          <a href="./index.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-House"></use>
+            </svg>
+            Головна
+          </a>
+        </li>
+        <li>
+          <a href="./manager.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Human"></use>
+            </svg>
+            Менеджер
+          </a>
+        </li>
+        <li>
+          <a href="./user.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-People"></use>
+            </svg>
+            Користувачі
+          </a>
+        </li>
+        <li>
+          <a href="./mediaChanel.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Copybook"></use>
+            </svg>
+            Медіа канали
+          </a>
+        </li>
+        <li>
+          <a href="./offers.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Copybook"></use>
+            </svg>
+            Офери
+          </a>
+        </li>
+        <li>
+          <a href="./profile.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Profile"></use>
+            </svg>
+            Профіль
+          </a>
+        </li>
+        <li>
+          <a href="./balance.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Card"></use>
+            </svg>
+            Баланс
+          </a>
+        </li>
+        <li class="is-active-mobile">
+          <a href="#">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Support"></use>
+            </svg>
+            Технічна підтримка
+          </a>
+        </li>
+      </ul>
+    </div>
+    <main class="mobile">
+      <section class="main">
+        <div class="main-div">
+          <svg width="20" height="20">
+            <use href="./imeges/sprite.svg#icon-Support"></use>
+          </svg>
+          Технічна підтримка
+        </div>
+      </section>
+      <section class="support_info">
+        <div class="container">
+          <ul>
+            <li>
+              <p>
+                Чи можу я додавати або редагувати більше ніж одного користувача
+                одночасно?
+              </p>
+              <svg width="14" height="7">
+                <use href="./imeges/sprite.svg#icon-vector-black"></use>
+              </svg>
+            </li>
+            <li>
+              <p>Як редагувати дані існуючого користувача?</p>
+              <svg width="14" height="7">
+                <use href="./imeges/sprite.svg#icon-vector-black"></use>
+              </svg>
+            </li>
+            <li>
+              <p>Які «додаткові дані» можна вибрати?</p>
+              <svg width="14" height="7">
+                <use href="./imeges/sprite.svg#icon-vector-black"></use>
+              </svg>
+            </li>
+            <li>
+              <p>Як створити та визначати дозволи для ролі?</p>
+              <svg width="14" height="7">
+                <use href="./imeges/sprite.svg#icon-vector-black"></use>
+              </svg>
+            </li>
+            <li>
+              <p>Які адміністративні функції тепер доступні для RapidLite?</p>
+              <svg width="14" height="7">
+                <use href="./imeges/sprite.svg#icon-vector-black"></use>
+              </svg>
+            </li>
+            <li>
+              <p>Як користуватися вкладкою PSAP?</p>
+              <svg width="14" height="7">
+                <use href="./imeges/sprite.svg#icon-vector-black"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="support_feedback">
+        <div class="container">
+          <form>
+            <h3>Зворотній зв’язок</h3>
+            <label>
+              <span>Вкажіть ім’я</span>
+              <input type="text" />
+            </label>
+            <label>
+              <span>E-mail для зв’язку</span>
+              <input type="text" />
+            </label>
+            <label>
+              <span>Повідомлення</span>
+              <input type="text" />
+            </label>
+            <ul>
+              <li><button type="button">Додати файл</button></li>
+              <li><button type="button">Відправити</button></li>
+            </ul>
+          </form>
+        </div>
+      </section>
+    </main>
+    <main class="desktop">
+      <section class="support_data">
+        <ul>
+          <li>
+            <span>Індекс</span>
+            <h4>601,78</h4>
+          </li>
+          <li>
+            <span>Зачислення</span>
+            <h4>3002,49</h4>
+          </li>
+          <li>
+            <span>Бюджет</span>
+            <h4>216</h4>
+          </li>
+          <li>
+            <span>Сповіщення</span>
+            <h4>212</h4>
+          </li>
+        </ul>
+      </section>
+      <section class="support_info_desktop">
+        <ul>
+          <li>
+            <h3>
+              Чи можу я додавати або редагувати більше ніж одного користувача
+              одночасно?
+            </h3>
+            <p>
+              Lorem ipsum — класичний варіант умовного беззмістовного тексту, що
+              вставляється в макет сторінки (у сленгу дизайнерів такий текст
+              називається «рибою»).
+            </p>
+            <div>
+              <svg width="24" height="24">
+                <use href="./imeges/sprite.svg#icon-layout"></use>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <h3>Як редагувати дані існуючого користувача?</h3>
+            <p>
+              Існує багато інших варіантів Lorem ipsum, часто дуже віддалені від
+              оригіналу.
+            </p>
+            <div>
+              <svg width="24" height="24">
+                <use href="./imeges/sprite.svg#icon-palette"></use>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <h3>Які «додаткові дані» можна вибрати?</h3>
+            <p>
+              Lorem ipsum — це перекручений уривок з філософського трактату
+              Цицерона «Про межі добра і зла», написаного в 45 році до нашої ери
+              латиною.
+            </p>
+            <div>
+              <svg width="24" height="24">
+                <use href="./imeges/sprite.svg#icon-brush"></use>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <h3>Як створити та визначати дозволи для ролі?</h3>
+            <p>
+              Часом вони містять додаткові літери, такі як k, w і z — які не
+              існували або були рідко вживані в латині, і беззмістовні слова на
+              кшталт zzril, takimata і gubergren, додані до первинного тексту.
+            </p>
+            <div>
+              <svg width="24" height="24">
+                <use href="./imeges/sprite.svg#icon-pen"></use>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <h3>Які адміністративні функції тепер доступні для RapidLite?</h3>
+            <p>
+              З точки зору зручності сприйняття друкованих текстів Lorem ipsum
+              показує, що латинська графіка найслушніше пристосовується для
+              написання саме творів латинською мовою (тут враховується частота
+              вживання символів з виносними елементами, таких як g, l, h, p).
+            </p>
+            <div>
+              <svg width="24" height="24">
+                <use href="./imeges/sprite.svg#icon-rocket"></use>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <h3>Як користуватися вкладкою PSAP?</h3>
+            <p>
+              В Microsoft Word 2007 і PowerPoint 2007 (і в більш пізніх версіях)
+              є функція lorem (=lorem(параметр1,параметр2), де параметр1 — число
+              абзаців, параметр2 — число речень в абзаці). Необхідно набрати,
+              наприклад =lorem(2,7) (і натиснути Enter), після чого в документі
+              з'явиться текст.
+            </p>
+            <div>
+              <svg width="24" height="24">
+                <use href="./imeges/sprite.svg#icon-box"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="support_feedback_desktop">
+        <form>
+          <h3>Зворотній зв’язок</h3>
+          <ul>
+            <li>
+              <label>
+                <span>Вкажіть ім’я</span>
+                <input type="text" />
+              </label>
+            </li>
+            <li>
+              <label>
+                <span>E-mail для зв’язку</span>
+                <input type="text" />
+              </label>
+            </li>
+          </ul>
+          <label>
+            <span>Повідомлення</span>
+            <input type="text" />
+          </label>
+          <button type="button">Додати файл</button>
+          <button type="button">Відправити</button>
+        </form>
+        <img src="./imeges/desktop/background.png" alt="" />
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <svg width="18" height="18">
+          <use href="./imeges/sprite.svg#icon-question"></use>
+        </svg>
+      </div>
+    </footer>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.desktop {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 863px;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+    padding: 0 20px 0 337px;
+  }
+  footer {
+    display: none;
+  }
+}

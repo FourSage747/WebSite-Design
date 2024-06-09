@@ -1,0 +1,46 @@
+.balance_payment {
+  padding-top: 50px;
+  button {
+    border: 0;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: #f1f4ff;
+    margin-bottom: 30px;
+    @include font(400, 16px);
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+  }
+  .balance_payment_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f1f4ff;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+    .balance_payment_li {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        span {
+          @include font(300, 12px);
+        }
+        .start {
+          display: flex;
+          align-items: center;
+          padding: 5px 20px;
+          border-radius: 20px;
+          background-color: #d8e1ff;
+          color: #2e65f3;
+        }
+        .end {
+          display: flex;
+          align-items: center;
+          padding: 5px 20px;
+          border-radius: 20px;
+          background-color: #dde4ba;
+          color: #0faf62;
+        }
+      }
+    }
+  }
+}

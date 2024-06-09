@@ -1,0 +1,33 @@
+.main_balance {
+  padding-bottom: 12px;
+  button {
+    text-align: center;
+    border: 0;
+    padding: 10px 18px;
+    background-color: #f1f4ff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+  }
+  .balance_div {
+    margin: 12px 0;
+    padding: 30px 20px;
+    background-color: #f1f4ff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+    h3 {
+      margin: 0;
+      margin-top: 43px;
+      @include font(700, 26px);
+    }
+  }
+  .balance_ul {
+    display: flex;
+    justify-content: space-between;
+    button {
+      padding: 8px 12px;
+      border-radius: 20px;
+      color: white;
+      background: linear-gradient(to right, #70a9ff, #0149b4);
+    }
+  }
+}

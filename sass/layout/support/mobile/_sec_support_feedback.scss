@@ -1,0 +1,46 @@
+.support_feedback {
+  padding: 8px 0;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 18px;
+    border-radius: 20px;
+    background-color: #f1f4ff;
+    h3 {
+      margin: 0;
+      @include font(400, 20px);
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      span {
+        @include font(300, 12px);
+      }
+      input {
+        padding: 10px;
+        border: 1px solid #a3aed0;
+        border-radius: 20px;
+        background: transparent;
+      }
+      &:last-of-type input {
+        height: 124px;
+      }
+    }
+    ul {
+      display: flex;
+      gap: 20px;
+      li {
+        // border-radius: 20px;
+        button {
+          border-radius: 20px;
+          border: 0;
+          padding: 10px 20px;
+          background: linear-gradient(to right, #70a9ff, #0149b4);
+          color: white;
+        }
+      }
+    }
+  }
+}

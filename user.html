@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website-Design</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/user.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-div">
+        <nav>
+          <div class="logo">
+            <a>
+              <picture>
+                <source
+                  srcset="./imeges/desktop/logo.png 1x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./imeges/tablet/logo.png 1x"
+                  media="(min-width: 768px)"
+                />
+                <source srcset="./imeges/mobile/logo.png 1x" />
+                <img src="" alt="" />
+              </picture>
+            </a>
+            <h1>Neurolide</h1>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="./manager.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Human"></use>
+                </svg>
+                Менеджер
+              </a>
+            </li>
+            <li class="is-active">
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-People"></use>
+                </svg>
+                Користувачі
+              </a>
+            </li>
+            <li>
+              <a href="./mediaChanel.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Copybook"></use>
+                </svg>
+                Медіа канали
+              </a>
+            </li>
+            <li>
+              <a href="./offers.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Copybook"></use>
+                </svg>
+                Офери
+              </a>
+            </li>
+            <li>
+              <a href="./profile.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Profile"></use>
+                </svg>
+                Профіль
+              </a>
+            </li>
+            <li>
+              <a href="./balance.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Card"></use>
+                </svg>
+                Баланс
+              </a>
+            </li>
+            <li>
+              <a href="./support.html">
+                <svg width="20" height="20">
+                  <use href="./imeges/sprite.svg#icon-Support"></use>
+                </svg>
+                Технічна підтримка
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="modal-button" data-menu-open>
+            <svg width="28" height="28">
+              <use href="./imeges/sprite.svg#icon-Menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div class="modal-nav" data-menu>
+      <ul class="modal-menu">
+        <li>
+          <a href="./index.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-House"></use>
+            </svg>
+            Головна
+          </a>
+        </li>
+        <li>
+          <a href="./manager.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Human"></use>
+            </svg>
+            Менеджер
+          </a>
+        </li>
+        <li class="is-active-mobile">
+          <a href="#">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-People"></use>
+            </svg>
+            Користувачі
+          </a>
+        </li>
+        <li>
+          <a href="./mediaChanel.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Copybook"></use>
+            </svg>
+            Медіа канали
+          </a>
+        </li>
+        <li>
+          <a href="./offers.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Copybook"></use>
+            </svg>
+            Офери
+          </a>
+        </li>
+        <li>
+          <a href="./profile.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Profile"></use>
+            </svg>
+            Профіль
+          </a>
+        </li>
+        <li>
+          <a href="./balance.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Card"></use>
+            </svg>
+            Баланс
+          </a>
+        </li>
+        <li>
+          <a href="./support.html">
+            <svg width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-Support"></use>
+            </svg>
+            Технічна підтримка
+          </a>
+        </li>
+      </ul>
+    </div>
+    <main class="mobile">
+      <section class="main">
+        <div class="main-div">
+          <svg width="20" height="20">
+            <use href="./imeges/sprite.svg#icon-People"></use>
+          </svg>
+          Користувачі
+        </div>
+      </section>
+      <section class="user_status">
+        <div class="container">
+          <div class="user_status_div">
+            <div class="user_status_normal_div">
+              <h3>UID 112 Статус</h3>
+              <ul>
+                <li><span>Бренд</span></li>
+                <li>
+                  <b>Нікнейм</b><br /><span>Mithlesha Kumara Singha</span>
+                </li>
+                <li><b>Пошта</b><br /><span>Катманду, річка</span></li>
+                <li><b>Баланс</b><br /><span>$122</span></li>
+                <li><b>Транзакції</b><br /><span>$1489</span></li>
+              </ul>
+              <ul>
+                <li data-modal-open="modal1">
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-bin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div id="open" class="user_status_hidden_div">
+              <ul class="user_status_hidden_ul1">
+                <li>
+                  <span>Ліди</span><br /><b>601,78</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Списання</span><br /><b>3002,49</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Approve</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Сповіщення</span><br /><b>212</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Баланс</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+              </ul>
+              <div class="user_status_hidden_ul2">
+                <h3>Платежі</h3>
+                <ul>
+                  <li data-modal-open="modal2">
+                    <svg width="17" height="17">
+                      <use href="./imeges/sprite.svg#icon-pencil"></use>
+                    </svg>
+                  </li>
+                  <li data-modal-open="modal3">
+                    <svg width="17" height="17">
+                      <use href="./imeges/sprite.svg#icon-settings"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="17" height="17">
+                      <use href="./imeges/sprite.svg#icon-check"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="17" height="17">
+                      <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                    </svg>
+                  </li>
+                  <li class="vector" hidden-content-open="open-vector">
+                    <svg width="17" height="17">
+                      <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <ul id="open-vector" class="open-vector">
+                  <li><b>Номер</b><br /><span>EKG464SJFN17</span></li>
+                  <li>
+                    <b>Дата рахунку</b><br /><span>10 грудня 2024 р.</span>
+                  </li>
+                  <li><b>Дата оплати</b><br /><span>10 грудня 2024 р</span></li>
+                  <li>
+                    <b>Спосіб оплати</b><br /><span
+                      >0077 **** **** 3814 (Visa)</span
+                    >
+                  </li>
+                  <li><b>Підписка</b><br /><span>Бонус (річний)</span></li>
+                  <li><b>Сума</b><br /><span>$129.88</span></li>
+                  <li><b>Статус</b><span>Прямує до</span></li>
+                </ul>
+              </div>
+              <ul class="user_status_hidden_ul3">
+                <li>Картки</li>
+                <li>5024 3468 1424 2100</li>
+                <li>6090 1234 5678 4509</li>
+              </ul>
+            </div>
+            <button class="button" hidden-content-open="open" type="button">
+              Розгорнути
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <main class="desktop">
+      <section class="user_data">
+        <ul>
+          <li>
+            <span>Індекс</span>
+            <h4>601,78</h4>
+          </li>
+          <li>
+            <span>Зачислення</span>
+            <h4>3002,49</h4>
+          </li>
+          <li>
+            <span>Бюджет</span>
+            <h4>216</h4>
+          </li>
+          <li>
+            <span>Сповіщення</span>
+            <h4>212</h4>
+          </li>
+        </ul>
+      </section>
+      <section class="user_offers">
+        <ul>
+          <li>
+            <span>UID</span>
+            <svg width="12" height="6">
+              <use href="./imeges/sprite.svg#icon-vector"></use>
+            </svg>
+          </li>
+          <li>
+            <span>Нікнейм</span>
+            <svg width="12" height="6">
+              <use href="./imeges/sprite.svg#icon-vector"></use>
+            </svg>
+          </li>
+          <li>
+            <span>Пошта</span>
+            <svg width="12" height="6">
+              <use href="./imeges/sprite.svg#icon-vector"></use>
+            </svg>
+          </li>
+          <li>
+            <span>Баланс</span>
+            <svg width="12" height="6">
+              <use href="./imeges/sprite.svg#icon-vector"></use>
+            </svg>
+          </li>
+          <li>
+            <span>Транзакції</span>
+            <svg width="12" height="6">
+              <use href="./imeges/sprite.svg#icon-vector"></use>
+            </svg>
+          </li>
+          <li>
+            <span>Статус</span>
+            <svg width="12" height="6">
+              <use href="./imeges/sprite.svg#icon-vector"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+      <section class="user_offers_list">
+        <ul class="user_offers_list_ul">
+          <li class="user_offers_list_li">
+            <ul
+              class="user_offers_list_haracter"
+              hidden-content-open="status-info1"
+            >
+              <li>
+                <span>112</span>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
+                </svg>
+              </li>
+              <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>Natole, Lalitpur</span></li>
+              <li><span>$122</span></li>
+              <li><span>$1489</span></li>
+              <li><span>Бренд</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-bin"></use>
+                </svg>
+              </li>
+              <li data-modal-open="modal1">
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+            <div id="status-info1" class="user_offers_list_hidden_div">
+              <ul class="user_offers_list_hidden_div_ul1">
+                <li>
+                  <span>Ліди</span><br /><b>601,78</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Списання</span><br /><b>3002,49</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Approve</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Сповіщення</span><br /><b>212</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Баланс</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul2">
+                <li><span>EKG464SJFN17</span></li>
+                <li><span>10 грудня 2024 р.</span></li>
+                <li><span>10 грудня 2024 р</span></li>
+                <li><span>Прямує до</span></li>
+                <li><span>0077 **** **** 3814 (Visa)</span></li>
+                <li><span>Бонус (річний)</span></li>
+                <li><span>$129.88</span></li>
+                <li>
+                  <ul>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-pencil"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal3">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-settings"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-check"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul3">
+                <li>Картки</li>
+                <li>5024 3468 1424 2100</li>
+                <li>6090 1234 5678 4509</li>
+              </ul>
+            </div>
+          </li>
+          <li class="user_offers_list_li">
+            <ul
+              class="user_offers_list_haracter"
+              hidden-content-open="status-info2"
+            >
+              <li>
+                <span>113</span>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
+                </svg>
+              </li>
+              <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>Natole, Lalitpur</span></li>
+              <li><span>$122</span></li>
+              <li><span>$1489</span></li>
+              <li><span>Бренд</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-bin"></use>
+                </svg>
+              </li>
+              <li data-modal-open="modal1">
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+            <div id="status-info2" class="user_offers_list_hidden_div">
+              <ul class="user_offers_list_hidden_div_ul1">
+                <li>
+                  <span>Ліди</span><br /><b>601,78</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Списання</span><br /><b>3002,49</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Approve</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Сповіщення</span><br /><b>212</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Баланс</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul2">
+                <li><span>EKG464SJFN17</span></li>
+                <li><span>10 грудня 2024 р.</span></li>
+                <li><span>10 грудня 2024 р</span></li>
+                <li><span>Прямує до</span></li>
+                <li><span>0077 **** **** 3814 (Visa)</span></li>
+                <li><span>Бонус (річний)</span></li>
+                <li><span>$129.88</span></li>
+                <li>
+                  <ul>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-pencil"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal3">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-settings"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-check"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul3">
+                <li>Картки</li>
+                <li>5024 3468 1424 2100</li>
+                <li>6090 1234 5678 4509</li>
+              </ul>
+            </div>
+          </li>
+          <li class="user_offers_list_li">
+            <ul
+              class="user_offers_list_haracter"
+              hidden-content-open="status-info3"
+            >
+              <li>
+                <span>114</span>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
+                </svg>
+              </li>
+              <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>Natole, Lalitpur</span></li>
+              <li><span>$122</span></li>
+              <li><span>$1489</span></li>
+              <li><span>Бренд</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-bin"></use>
+                </svg>
+              </li>
+              <li data-modal-open="modal1">
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+            <div id="status-info3" class="user_offers_list_hidden_div">
+              <ul class="user_offers_list_hidden_div_ul1">
+                <li>
+                  <span>Ліди</span><br /><b>601,78</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Списання</span><br /><b>3002,49</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Approve</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Сповіщення</span><br /><b>212</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Баланс</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul2">
+                <li><span>EKG464SJFN17</span></li>
+                <li><span>10 грудня 2024 р.</span></li>
+                <li><span>10 грудня 2024 р</span></li>
+                <li><span>Прямує до</span></li>
+                <li><span>0077 **** **** 3814 (Visa)</span></li>
+                <li><span>Бонус (річний)</span></li>
+                <li><span>$129.88</span></li>
+                <li>
+                  <ul>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-pencil"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal3">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-settings"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-check"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul3">
+                <li>Картки</li>
+                <li>5024 3468 1424 2100</li>
+                <li>6090 1234 5678 4509</li>
+              </ul>
+            </div>
+          </li>
+          <li class="user_offers_list_li">
+            <ul
+              class="user_offers_list_haracter"
+              hidden-content-open="status-info4"
+            >
+              <li>
+                <span>115</span>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
+                </svg>
+              </li>
+              <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>Natole, Lalitpur</span></li>
+              <li><span>$122</span></li>
+              <li><span>$1489</span></li>
+              <li><span>Бренд</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-bin"></use>
+                </svg>
+              </li>
+              <li data-modal-open="modal1">
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+            <div id="status-info4" class="user_offers_list_hidden_div">
+              <ul class="user_offers_list_hidden_div_ul1">
+                <li>
+                  <span>Ліди</span><br /><b>601,78</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Списання</span><br /><b>3002,49</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Approve</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Сповіщення</span><br /><b>212</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Баланс</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul2">
+                <li><span>EKG464SJFN17</span></li>
+                <li><span>10 грудня 2024 р.</span></li>
+                <li><span>10 грудня 2024 р</span></li>
+                <li><span>Прямує до</span></li>
+                <li><span>0077 **** **** 3814 (Visa)</span></li>
+                <li><span>Бонус (річний)</span></li>
+                <li><span>$129.88</span></li>
+                <li>
+                  <ul>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-pencil"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal3">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-settings"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-check"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul3">
+                <li>Картки</li>
+                <li>5024 3468 1424 2100</li>
+                <li>6090 1234 5678 4509</li>
+              </ul>
+            </div>
+          </li>
+          <li class="user_offers_list_li">
+            <ul
+              class="user_offers_list_haracter"
+              hidden-content-open="status-info5"
+            >
+              <li>
+                <span>116</span>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
+                </svg>
+              </li>
+              <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>Natole, Lalitpur</span></li>
+              <li><span>$122</span></li>
+              <li><span>$1489</span></li>
+              <li><span>Бренд</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-bin"></use>
+                </svg>
+              </li>
+              <li data-modal-open="modal1">
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+            <div id="status-info5" class="user_offers_list_hidden_div">
+              <ul class="user_offers_list_hidden_div_ul1">
+                <li>
+                  <span>Ліди</span><br /><b>601,78</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Списання</span><br /><b>3002,49</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Approve</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Сповіщення</span><br /><b>212</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Баланс</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul2">
+                <li><span>EKG464SJFN17</span></li>
+                <li><span>10 грудня 2024 р.</span></li>
+                <li><span>10 грудня 2024 р</span></li>
+                <li><span>Прямує до</span></li>
+                <li><span>0077 **** **** 3814 (Visa)</span></li>
+                <li><span>Бонус (річний)</span></li>
+                <li><span>$129.88</span></li>
+                <li>
+                  <ul>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-pencil"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal3">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-settings"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-check"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul3">
+                <li>Картки</li>
+                <li>5024 3468 1424 2100</li>
+                <li>6090 1234 5678 4509</li>
+              </ul>
+            </div>
+          </li>
+          <li class="user_offers_list_li">
+            <ul
+              class="user_offers_list_haracter"
+              hidden-content-open="status-info6"
+            >
+              <li>
+                <span>117</span>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
+                </svg>
+              </li>
+              <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>Natole, Lalitpur</span></li>
+              <li><span>$122</span></li>
+              <li><span>$1489</span></li>
+              <li><span>Бренд</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-bin"></use>
+                </svg>
+              </li>
+              <li data-modal-open="modal1">
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+            <div id="status-info6" class="user_offers_list_hidden_div">
+              <ul class="user_offers_list_hidden_div_ul1">
+                <li>
+                  <span>Ліди</span><br /><b>601,78</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Списання</span><br /><b>3002,49</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Approve</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Сповіщення</span><br /><b>212</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Баланс</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul2">
+                <li><span>EKG464SJFN17</span></li>
+                <li><span>10 грудня 2024 р.</span></li>
+                <li><span>10 грудня 2024 р</span></li>
+                <li><span>Прямує до</span></li>
+                <li><span>0077 **** **** 3814 (Visa)</span></li>
+                <li><span>Бонус (річний)</span></li>
+                <li><span>$129.88</span></li>
+                <li>
+                  <ul>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-pencil"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal3">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-settings"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-check"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul3">
+                <li>Картки</li>
+                <li>5024 3468 1424 2100</li>
+                <li>6090 1234 5678 4509</li>
+              </ul>
+            </div>
+          </li>
+          <li class="user_offers_list_li">
+            <ul
+              class="user_offers_list_haracter"
+              hidden-content-open="status-info7"
+            >
+              <li>
+                <span>118</span>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
+                </svg>
+              </li>
+              <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>Natole, Lalitpur</span></li>
+              <li><span>$122</span></li>
+              <li><span>$1489</span></li>
+              <li><span>Бренд</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-bin"></use>
+                </svg>
+              </li>
+              <li data-modal-open="modal1">
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+            <div id="status-info7" class="user_offers_list_hidden_div">
+              <ul class="user_offers_list_hidden_div_ul1">
+                <li>
+                  <span>Ліди</span><br /><b>601,78</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Списання</span><br /><b>3002,49</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Approve</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Сповіщення</span><br /><b>212</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Баланс</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul2">
+                <li><span>EKG464SJFN17</span></li>
+                <li><span>10 грудня 2024 р.</span></li>
+                <li><span>10 грудня 2024 р</span></li>
+                <li><span>Прямує до</span></li>
+                <li><span>0077 **** **** 3814 (Visa)</span></li>
+                <li><span>Бонус (річний)</span></li>
+                <li><span>$129.88</span></li>
+                <li>
+                  <ul>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-pencil"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal3">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-settings"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-check"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul3">
+                <li>Картки</li>
+                <li>5024 3468 1424 2100</li>
+                <li>6090 1234 5678 4509</li>
+              </ul>
+            </div>
+          </li>
+          <li class="user_offers_list_li">
+            <ul
+              class="user_offers_list_haracter"
+              hidden-content-open="status-info8"
+            >
+              <li>
+                <span>119</span>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
+                </svg>
+              </li>
+              <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>Natole, Lalitpur</span></li>
+              <li><span>$122</span></li>
+              <li><span>$1489</span></li>
+              <li><span>Бренд</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-bin"></use>
+                </svg>
+              </li>
+              <li data-modal-open="modal1">
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+            <div id="status-info8" class="user_offers_list_hidden_div">
+              <ul class="user_offers_list_hidden_div_ul1">
+                <li>
+                  <span>Ліди</span><br /><b>601,78</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Списання</span><br /><b>3002,49</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Approve</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Сповіщення</span><br /><b>212</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Баланс</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul2">
+                <li><span>EKG464SJFN17</span></li>
+                <li><span>10 грудня 2024 р.</span></li>
+                <li><span>10 грудня 2024 р</span></li>
+                <li><span>Прямує до</span></li>
+                <li><span>0077 **** **** 3814 (Visa)</span></li>
+                <li><span>Бонус (річний)</span></li>
+                <li><span>$129.88</span></li>
+                <li>
+                  <ul>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-pencil"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal3">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-settings"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-check"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul3">
+                <li>Картки</li>
+                <li>5024 3468 1424 2100</li>
+                <li>6090 1234 5678 4509</li>
+              </ul>
+            </div>
+          </li>
+          <li class="user_offers_list_li">
+            <ul
+              class="user_offers_list_haracter"
+              hidden-content-open="status-info9"
+            >
+              <li>
+                <span>120</span>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
+                </svg>
+              </li>
+              <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>Natole, Lalitpur</span></li>
+              <li><span>$122</span></li>
+              <li><span>$1489</span></li>
+              <li><span>Бренд</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-bin"></use>
+                </svg>
+              </li>
+              <li data-modal-open="modal1">
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+            <div id="status-info9" class="user_offers_list_hidden_div">
+              <ul class="user_offers_list_hidden_div_ul1">
+                <li>
+                  <span>Ліди</span><br /><b>601,78</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Списання</span><br /><b>3002,49</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Approve</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Сповіщення</span><br /><b>212</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Баланс</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul2">
+                <li><span>EKG464SJFN17</span></li>
+                <li><span>10 грудня 2024 р.</span></li>
+                <li><span>10 грудня 2024 р</span></li>
+                <li><span>Прямує до</span></li>
+                <li><span>0077 **** **** 3814 (Visa)</span></li>
+                <li><span>Бонус (річний)</span></li>
+                <li><span>$129.88</span></li>
+                <li>
+                  <ul>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-pencil"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal3">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-settings"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-check"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul3">
+                <li>Картки</li>
+                <li>5024 3468 1424 2100</li>
+                <li>6090 1234 5678 4509</li>
+              </ul>
+            </div>
+          </li>
+          <li class="user_offers_list_li">
+            <ul
+              class="user_offers_list_haracter"
+              hidden-content-open="status-info10"
+            >
+              <li>
+                <span>121</span>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
+                </svg>
+              </li>
+              <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>Natole, Lalitpur</span></li>
+              <li><span>$122</span></li>
+              <li><span>$1489</span></li>
+              <li><span>Бренд</span></li>
+              <li>
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-bin"></use>
+                </svg>
+              </li>
+              <li data-modal-open="modal1">
+                <svg width="26" height="26">
+                  <use href="./imeges/sprite.svg#icon-settings"></use>
+                </svg>
+              </li>
+            </ul>
+            <div id="status-info10" class="user_offers_list_hidden_div">
+              <ul class="user_offers_list_hidden_div_ul1">
+                <li>
+                  <span>Ліди</span><br /><b>601,78</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Списання</span><br /><b>3002,49</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Approve</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Сповіщення</span><br /><b>212</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-pencil"></use>
+                  </svg>
+                </li>
+                <li>
+                  <span>Баланс</span><br /><b>216</b>
+                  <svg width="20" height="20">
+                    <use href="./imeges/sprite.svg#icon-settings"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul2">
+                <li><span>EKG464SJFN17</span></li>
+                <li><span>10 грудня 2024 р.</span></li>
+                <li><span>10 грудня 2024 р</span></li>
+                <li><span>Прямує до</span></li>
+                <li><span>0077 **** **** 3814 (Visa)</span></li>
+                <li><span>Бонус (річний)</span></li>
+                <li><span>$129.88</span></li>
+                <li>
+                  <ul>
+                    <li data-modal-open="modal2">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-pencil"></use>
+                      </svg>
+                    </li>
+                    <li data-modal-open="modal3">
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-settings"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-check"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="17">
+                        <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="user_offers_list_hidden_div_ul3">
+                <li>Картки</li>
+                <li>5024 3468 1424 2100</li>
+                <li>6090 1234 5678 4509</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <svg width="18" height="18">
+          <use href="./imeges/sprite.svg#icon-question"></use>
+        </svg>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" id="modal1" data-modal>
+      <div class="modal">
+        <h2>Редагувати офер</h2>
+        <form>
+          <label>
+            <span>Нікнейм</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Пошта</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Баланс</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Транзакції</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <div class="modal_desktop_menu">
+            <span>Модель оплати</span>
+            <ul>
+              <li>
+                <span>RevShare</span>
+                <p id="p1">%$</p>
+                <svg width="12" height="6" open-paragraf="p1">
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CPL</span>
+                <p id="p2">$</p>
+                <svg width="12" height="6" open-paragraf="p2">
+                  <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CPC</span>
+                <p id="p3">$</p>
+                <svg width="12" height="6" open-paragraf="p3">
+                  <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CPM</span>
+              </li>
+              <li>
+                <span>CPH</span>
+              </li>
+            </ul>
+          </div>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li>
+              <button type="button">
+                <svg width="13" height="13">
+                  <use href="./imeges/sprite.svg#icon-plus"></use>
+                </svg>
+                Зберегти
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" id="modal2" data-modal>
+      <div class="modal">
+        <h2>Заміна данних платежу</h2>
+        <form>
+          <label>
+            <span>Номер</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <ul>
+            <li>
+              <label
+                ><span>Дата рахунку</span><input type="text" placeholder="****"
+              /></label>
+            </li>
+            <li>
+              <label
+                ><span>Дата оплати</span><input type="text" placeholder="...."
+              /></label>
+            </li>
+          </ul>
+          <label>
+            <span>Статус</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Спосіб оплати</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Підписка</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Сума</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li><button type="button">Зберегти</button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" id="modal3" data-modal>
+      <div class="modal">
+        <h2>Внесення коректив платежу</h2>
+        <form>
+          <label>
+            <span>Номер</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <ul>
+            <li>
+              <label
+                ><span>Дата рахунку</span><input type="text" placeholder="****"
+              /></label>
+            </li>
+            <li>
+              <label
+                ><span>Дата оплати</span><input type="text" placeholder="...."
+              /></label>
+            </li>
+          </ul>
+          <label>
+            <span>Статус</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Спосіб оплати</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Підписка</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <label>
+            <span>Сума</span>
+            <input type="text" placeholder="...." />
+          </label>
+          <ul>
+            <li><button type="button" data-modal-close>Відмінити</button></li>
+            <li><button type="button">Зберегти</button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/hiddenContent.js"></script>
+  </body>
+</html>

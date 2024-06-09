@@ -1,0 +1,99 @@
+main {
+  padding-bottom: 20px;
+  .container {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h2 {
+        @include font(400, 26px);
+        margin: 0;
+      }
+      button {
+        border: 0;
+        border-radius: 20px;
+        padding: 10px 0;
+        color: white;
+        background: linear-gradient(to right, #70a9ff, #0149b4);
+        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+      }
+      ul {
+        display: flex;
+        gap: 10px;
+        li {
+          border-radius: 20px;
+          width: 100%;
+          button {
+            width: 100%;
+          }
+        }
+        li:first-child button {
+          background: #2e65f3;
+        }
+        li:last-child button {
+          background: #124897;
+        }
+      }
+      label {
+        // display: block;
+        // width: 100%;
+        span {
+          display: block;
+          @include font(300, 12px);
+          margin-bottom: 8px;
+        }
+        input {
+          background: transparent;
+          box-sizing: border-box;
+          width: 100%;
+          padding: 11px 14px;
+          border: 1px solid #a3aed0;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  main {
+    padding: 80px 0;
+    .container {
+      width: 454px;
+      margin-left: 10%;
+      form {
+        gap: 30px;
+        h2 {
+          @include font(400, 30px);
+          margin: 0;
+          text-align: center;
+        }
+        button {
+          @include font(400, 16px);
+          padding: 20px;
+        }
+        ul {
+          li {
+            button {
+              text-align: start;
+            }
+          }
+          li:first-child button {
+            background: #2e65f3;
+          }
+          li:last-child button {
+            background: #124897;
+          }
+        }
+        label {
+          span {
+            @include font(300, 16px);
+            margin-bottom: 10px;
+          }
+          input {
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}

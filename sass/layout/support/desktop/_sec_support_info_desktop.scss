@@ -1,0 +1,46 @@
+.support_info_desktop {
+  padding: 0 60px 0 80px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 0;
+    li {
+      position: relative;
+      width: 350px;
+      h3 {
+        @include font(400, 16px);
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      p {
+        @include font(300, 12px);
+        margin: 0;
+      }
+      div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-70%);
+        right: 105%;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: #f1f4ff;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  .support_info_desktop {
+    ul {
+      li {
+        width: 400px;
+        h3 {
+          @include font(400, 18px);
+        }
+        p {
+          @include font(300, 14px);
+        }
+      }
+    }
+  }
+}

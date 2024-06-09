@@ -1,55 +1,37 @@
-const refs = {
-  openModalBtn: document.querySelector("[data-modal-open]"),
-  closeModalBtn: document.querySelector("[data-modal-close]"),
-  modal: document.querySelector("[data-modal]"),
-};
 (() => {
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+  const refs = {
+    openModalBtn: document.querySelectorAll("[data-modal-open]"),
+    closeModalBtn: document.querySelectorAll("[data-modal-close]"),
+    modals: document.querySelectorAll("[data-modal]"),
+    vectors: document.querySelectorAll("[open-paragraf]"),
+  };
+
+  refs.openModalBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+      const modalId = button.getAttribute("data-modal-open");
+      const modal = document.getElementById(modalId);
+      modal.classList.remove("is-hidden");
+    });
+  });
+  refs.closeModalBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+      const modal = button.closest("[data-modal]");
+      modal.classList.add("is-hidden");
+    });
+  });
+  refs.modals.forEach((modal) => {
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.classList.add("is-hidden");
+      }
+    });
+  });
+  refs.vectors.forEach((vector) => {
+    vector.addEventListener("click", () => {
+      const paragrafId = vector.getAttribute("open-paragraf");
+      const paragraf = document.getElementById(paragrafId);
+      paragraf.classList.toggle("visible");
+      vector.classList.toggle("rotate");
+    });
+  });
 })();
-function toggleModal() {
-  refs.modal.classList.toggle("is-hidden");
-}
-
-document.getElementById("myForm").addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  let isValid = true;
-
-  // Очистити попередні помилки
-  document.getElementById("nameError").textContent = "";
-  document.getElementById("phoneError").textContent = "";
-  document.getElementById("emailError").textContent = "";
-
-  // Перевірка імені
-  const name = document.getElementById("name").value;
-  if (!name) {
-    isValid = false;
-    document.getElementById("nameError").textContent =
-      "Будь ласка, введіть ваше ім'я.";
-  }
-
-  // Перевірка телефону
-  const phone = document.getElementById("phone").value;
-  const phonePattern = /^\+?\d{10,15}$/;
-  if (!phonePattern.test(phone)) {
-    isValid = false;
-    document.getElementById("phoneError").textContent =
-      "Будь ласка, введіть правильний номер телефону.";
-  }
-
-  // Перевірка електронної пошти
-  const email = document.getElementById("email").value;
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(email)) {
-    isValid = false;
-    document.getElementById("emailError").textContent =
-      "Будь ласка, введіть правильну електронну пошту.";
-  }
-
-  // Повідомлення про успіх
-  if (isValid) {
-    toggleModal();
-    alert("Форма успішно заповнена!");
-  }
-});

@@ -1,0 +1,23 @@
+.support_info {
+  padding-top: 8px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    li {
+      position: relative;
+      padding: 18px;
+      border-radius: 20px;
+      background-color: #f1f4ff;
+      p {
+        margin: 0;
+        @include font(400, 20px);
+      }
+      svg {
+        position: absolute;
+        bottom: 18px;
+        right: 18px;
+      }
+    }
+  }
+}

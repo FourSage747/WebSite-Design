@@ -1,15 +1,13 @@
-@import "./utils/variables";
 @import "./utils/hidden";
 
 @import "./base/base";
 
 @import "./layout/header";
-@import "./layout/sec_main";
-@import "./layout/sec_text";
-@import "./layout/sec_imeges";
-@import "./layout/sec_choise";
-@import "./layout/sec_expirience";
-@import "./layout/sec_ourteam";
+@import "./layout/main";
+@import "./layout/main/sec_main_ul";
+@import "./layout/main/sec_main_info";
+@import "./layout/main/sec_main_balance";
+
 @import "./layout/footer";
 
 @import "./components/backdrop";

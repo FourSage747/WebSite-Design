@@ -1,0 +1,35 @@
+.offers_status {
+  padding: 10px 0;
+  .container {
+    div {
+      position: relative;
+      background-color: #f1f4ff;
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+      h3 {
+        @include font(400, 18px);
+        margin: 0;
+        margin-bottom: 28px;
+      }
+      ul:first-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        b {
+          @include font(400, 18px);
+        }
+        span {
+          @include font(300, 14px);
+        }
+      }
+      ul:last-child {
+        position: absolute;
+        display: flex;
+        gap: 20px;
+        top: 18px;
+        right: 18px;
+      }
+    }
+  }
+}

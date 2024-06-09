@@ -1,0 +1,30 @@
+.main_info {
+  padding: 22px 0;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    li {
+      padding: 6px 12px;
+      background-color: #f1f4ff;
+      border-radius: 10px;
+      &:first-child {
+        border-bottom: 3.5px solid #ff0000;
+      }
+      &:nth-child(2) {
+        border-bottom: 3.5px solid #ffd600;
+      }
+      &:nth-child(3) {
+        border-bottom: 3.5px solid #0fb600;
+      }
+      &:last-child {
+        border-bottom: 3.5px solid #9e00ff;
+      }
+      h4 {
+        margin: 0;
+        margin-top: 5px;
+        @include font(700, 20px);
+      }
+    }
+  }
+}
