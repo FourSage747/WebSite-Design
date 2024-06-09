@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,8 +13,9 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/balance.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
     <header>
       <div class="nav-div">
@@ -77,8 +78,8 @@
                 Профіль
               </a>
             </li>
-            <li class="is-active">
-              <a href="#">
+            <li>
+              <a href="./balance.html">
                 <svg width="20" height="20">
                   <use href="./imeges/sprite.svg#icon-Card"></use>
                 </svg>
@@ -104,8 +105,8 @@
     </header>
     <div class="modal-nav" data-menu>
       <ul class="modal-menu">
-        <li>
-          <a href="./main.html">
+        <li class="is-active-mobile">
+          <a href="#">
             <svg width="20" height="20">
               <use href="./imeges/sprite.svg#icon-House"></use>
             </svg>
@@ -152,8 +153,8 @@
             Профіль
           </a>
         </li>
-        <li class="is-active-mobile">
-          <a href="#">
+        <li>
+          <a href="./balance.html">
             <svg width="20" height="20">
               <use href="./imeges/sprite.svg#icon-Card"></use>
             </svg>
@@ -170,18 +171,18 @@
         </li>
       </ul>
     </div>
-    <main class="mobile">
+    <main>
       <section class="main">
         <div class="main-div">
           <svg width="20" height="20">
-            <use href="./imeges/sprite.svg#icon-Card"></use>
+            <use href="./imeges/sprite.svg#icon-House"></use>
           </svg>
-          Баланс
+          Головна
         </div>
       </section>
-      <section class="balance_card">
+      <section class="main-ul">
         <div class="container">
-          <ul class="balance_card_button">
+          <ul class="main-ul-button">
             <li><button type="button">Платіжний метод</button></li>
             <li>
               <button type="button" data-modal-open="modal1">
@@ -189,7 +190,7 @@
               </button>
             </li>
           </ul>
-          <ul class="balance_card_choise">
+          <ul class="choise-card">
             <li>
               <svg width="5" height="30">
                 <use href="./imeges/sprite.svg#icon-arrow-left"></use>
@@ -224,7 +225,29 @@
           </ul>
         </div>
       </section>
-      <section class="balance_balance">
+      <section class="main_info">
+        <div class="container">
+          <ul>
+            <li>
+              <span>Індекс</span>
+              <h4>601,78</h4>
+            </li>
+            <li>
+              <span>Зачислення</span>
+              <h4>3002,49</h4>
+            </li>
+            <li>
+              <span>Бюджет</span>
+              <h4>216</h4>
+            </li>
+            <li>
+              <span>Сповіщення</span>
+              <h4>212</h4>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main_balance">
         <div class="container">
           <button type="button">Особистий баланс</button>
           <div class="balance_div">
@@ -241,184 +264,6 @@
               <button type="button" data-modal-open="modal3">
                 Поповнити баланс
               </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="balance_status">
-        <div class="container">
-          <button type="button">Історія платежів</button>
-          <div>
-            <h3>Статус</h3>
-            <ul>
-              <li><b>Номер</b><br /><span>EKG464SJFN17</span></li>
-              <li><b>Дата рахунку</b><br /><span>10 грудня 2024 р.</span></li>
-              <li><b>Дата оплати</b><br /><span>10 грудня 2024 р</span></li>
-              <li>
-                <b>Спосіб оплати</b><br /><span
-                  >0077 **** **** 3814 (Visa)</span
-                >
-              </li>
-              <li><b>Підписка</b><br /><span>Бонус (річний)</span></li>
-              <li><b>Сума</b><br /><span>$129.88</span></li>
-              <li><span>Прямує до</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
-    <main class="desktop">
-      <section class="balance_data">
-        <ul>
-          <li>
-            <span>Індекс</span>
-            <h4>601,78</h4>
-          </li>
-          <li>
-            <span>Зачислення</span>
-            <h4>3002,49</h4>
-          </li>
-          <li>
-            <span>Бюджет</span>
-            <h4>216</h4>
-          </li>
-          <li>
-            <span>Сповіщення</span>
-            <h4>212</h4>
-          </li>
-        </ul>
-        <img src="./imeges/desktop/background.png" alt="" />
-      </section>
-      <section class="balance_addCard">
-        <div class="container">
-          <button type="button">Платіжний метод</button>
-          <ul class="desktop_card_ul">
-            <li class="desktop_card_li">
-              <ul>
-                <li>
-                  <b>$95, 400.00 USD</b
-                  ><img width="50" src="./imeges/desktop/VISA.png" alt="" />
-                </li>
-                <li>
-                  <b
-                    >**** **** **** 3814
-                    <svg width="20" height="20">
-                      <use href="./imeges/sprite.svg#icon-Copy"></use></svg></b
-                  ><span>Expires 04 / 24</span>
-                </li>
-                <li>
-                  <b>Kevin Gilbert</b
-                  ><svg width="24" height="24">
-                    <use href="./imeges/sprite.svg#icon-Other"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li class="desktop_card_li">
-              <ul>
-                <li>
-                  <b>$87, 580.00 USD</b
-                  ><img width="55" src="./imeges/desktop/CODE.png" alt="" />
-                </li>
-                <li>
-                  <b
-                    >**** **** **** 5468
-                    <svg width="20" height="20">
-                      <use href="./imeges/sprite.svg#icon-Copy"></use></svg></b
-                  ><span>Expires 12 / 22</span>
-                </li>
-                <li>
-                  <b>Kevin Gilbert</b
-                  ><svg width="24" height="24">
-                    <use href="./imeges/sprite.svg#icon-Other"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li class="desktop_card_add" data-modal-open="modal1">
-              <svg width="35" height="35">
-                <use href="./imeges/sprite.svg#icon-addCard"></use>
-              </svg>
-              <span>Додати нову карту</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="balance_addBalance">
-        <div class="container">
-          <ul>
-            <li><button type="button">Особистий баланс</button></li>
-            <li data-modal-open="modal3">
-              <button type="button">Поповнити баланс</button>
-            </li>
-            <li data-modal-open="modal2">
-              <button type="button">Вивести баланс</button>
-            </li>
-          </ul>
-          <div>
-            <span>Баланс</span>
-            <h3>$85,400.00</h3>
-          </div>
-        </div>
-      </section>
-      <section class="balance_payment">
-        <div class="container">
-          <button type="button">Історія платежів</button>
-          <ul class="balance_payment_ul">
-            <li class="balance_payment_li">
-              <ul>
-                <li><span>Номер.</span></li>
-                <li><span>Дата рахунку</span></li>
-                <li><span>Дата оплати</span></li>
-                <li><span>Статус</span></li>
-                <li><span>Спосіб оплати</span></li>
-                <li><span>Підписка</span></li>
-                <li><span>Сума</span></li>
-              </ul>
-            </li>
-            <li class="balance_payment_li">
-              <ul>
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li class="start"><span>Прямує до</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
-              </ul>
-            </li>
-            <li class="balance_payment_li">
-              <ul>
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li class="end"><span>Завершено</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
-              </ul>
-            </li>
-            <li class="balance_payment_li">
-              <ul>
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li class="start"><span>Прямує до</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
-              </ul>
-            </li>
-            <li class="balance_payment_li">
-              <ul>
-                <li><span>EKG464SJFN17</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li><span>10 грудня 2024 р.</span></li>
-                <li class="end"><span>Завершено</span></li>
-                <li><span>0077 **** **** 3814 (Visa)</span></li>
-                <li><span>Бонус (річний)</span></li>
-                <li><span>$129.88</span></li>
-              </ul>
             </li>
           </ul>
         </div>
@@ -483,7 +328,6 @@
             <span>Вивести суму</span>
             <input type="text" placeholder="...." />
           </label>
-
           <ul>
             <li><button type="button" data-modal-close>Відмінити</button></li>
             <li><button type="button">Вивести</button></li>
@@ -539,7 +383,6 @@
         </form>
       </div>
     </div>
-
     <script src="./scripts/modal.js"></script>
     <script src="./scripts/menu.js"></script>
   </body>
